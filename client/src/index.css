@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050811;
+  color: #f1f5f9;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden;
+}
+
+/* Custom Cyber Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 19, 41, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Glowing cyber borders & badges */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.45);
+}
+
+.glow-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+}
+
+.glow-trap {
+  box-shadow: 0 0 18px rgba(245, 158, 11, 0.55);
+}
+
+.cyber-grid {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.cyber-card {
+  background: rgba(11, 19, 41, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+.cyber-button-red {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  border: 1px solid #ef4444;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.cyber-button-red:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.7), inset 0 0 15px rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.cyber-button-red:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
